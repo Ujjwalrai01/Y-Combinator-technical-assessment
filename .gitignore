@@ -1,2 +1,21 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/build/
+
+# Python
+backend/__pycache__/
+backend/*.pyc
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+
+# Misc
 *.pdf
+*.log
