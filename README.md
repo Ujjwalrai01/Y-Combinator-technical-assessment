@@ -15,19 +15,6 @@
 > Drag. Connect. Analyse. Build AI pipelines visually — the way VectorShift does it in production.
 
 <br/>
-
-<img width="1904" height="955" alt="image" src="https://github.com/user-attachments/assets/19e233ae-15a9-4300-abc6-6e9263ca2525" />
-<img width="1907" height="950" alt="image" src="https://github.com/user-attachments/assets/610e135f-52ce-4db7-b8a0-c2056500583e" />
-<img width="1900" height="948" alt="image" src="https://github.com/user-attachments/assets/ad2271fb-181b-4dc2-b3d0-985c20014255" />
-<img width="1910" height="952" alt="image" src="https://github.com/user-attachments/assets/edea8e11-39d5-4a1e-91a2-0ae75f2b5dda" />
-<img width="709" height="948" alt="image" src="https://github.com/user-attachments/assets/856a5ffa-700a-45e0-8f09-c48b3432da1e" />
-<img width="715" height="940" alt="image" src="https://github.com/user-attachments/assets/385a4880-726c-4078-a66f-3919c38cffd5" />
-
-
-
-
-
-
 </div>
 
 ---
@@ -56,22 +43,12 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://via.placeholder.com/420x260/0d1117/6366f1?text=Dark+Mode" width="420" alt="Dark Mode" />
-      <br/><sub><b>Dark Mode</b></sub>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/420x260/f8fafc/6366f1?text=Light+Mode" width="420" alt="Light Mode" />
-      <br/><sub><b>Light Mode</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://via.placeholder.com/420x260/0d1117/10b981?text=Pipeline+Analysis+Modal" width="420" alt="Modal" />
-      <br/><sub><b>Pipeline Analysis Modal</b></sub>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/420x260/0d1117/6366f1?text=Mobile+Bottom+Sheet" width="420" alt="Mobile" />
-      <br/><sub><b>Mobile — Bottom Sheet</b></sub>
+      <img width="1904" height="955" alt="image" src="https://github.com/user-attachments/assets/19e233ae-15a9-4300-abc6-6e9263ca2525" />
+<img width="1907" height="950" alt="image" src="https://github.com/user-attachments/assets/610e135f-52ce-4db7-b8a0-c2056500583e" />
+<img width="1900" height="948" alt="image" src="https://github.com/user-attachments/assets/ad2271fb-181b-4dc2-b3d0-985c20014255" />
+      <img width="1910" height="952" alt="image" src="https://github.com/user-attachments/assets/edea8e11-39d5-4a1e-91a2-0ae75f2b5dda" />
+<img width="709" height="948" alt="image" src="https://github.com/user-attachments/assets/856a5ffa-700a-45e0-8f09-c48b3432da1e" />
+<img width="715" height="940" alt="image" src="https://github.com/user-attachments/assets/385a4880-726c-4078-a66f-3919c38cffd5" />
     </td>
   </tr>
 </table>
