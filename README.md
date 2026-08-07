@@ -16,7 +16,17 @@
 
 <br/>
 
-![Dark Mode Pipeline](https://via.placeholder.com/900x500/0d1117/6366f1?text=VectorShift+Pipeline+Builder+%E2%80%94+Dark+Mode)
+<img width="1904" height="955" alt="image" src="https://github.com/user-attachments/assets/19e233ae-15a9-4300-abc6-6e9263ca2525" />
+<img width="1907" height="950" alt="image" src="https://github.com/user-attachments/assets/610e135f-52ce-4db7-b8a0-c2056500583e" />
+<img width="1900" height="948" alt="image" src="https://github.com/user-attachments/assets/ad2271fb-181b-4dc2-b3d0-985c20014255" />
+<img width="1910" height="952" alt="image" src="https://github.com/user-attachments/assets/edea8e11-39d5-4a1e-91a2-0ae75f2b5dda" />
+<img width="709" height="948" alt="image" src="https://github.com/user-attachments/assets/856a5ffa-700a-45e0-8f09-c48b3432da1e" />
+<img width="715" height="940" alt="image" src="https://github.com/user-attachments/assets/385a4880-726c-4078-a66f-3919c38cffd5" />
+
+
+
+
+
 
 </div>
 
