@@ -11,9 +11,12 @@
   html, body, #root {
     height: 100%;
     width: 100%;
+    /* Allow vertical scroll on mobile if content overflows */
     overflow: hidden;
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    /* Prevent iOS double-tap zoom */
+    touch-action: manipulation;
   }
 
   /* Custom scrollbar */
@@ -21,15 +24,19 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
   .dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+  /* Prevent text selection while dragging nodes */
+  .react-flow__node { user-select: none; }
 }
 
-/* ── React Flow overrides ──────────────────────────────────────────────────── */
-.react-flow__node { border-radius: 14px !important; }
-.react-flow__edge-path { stroke-width: 2; }
+/* ── React Flow global overrides ────────────────────────────────────────────── */
+.react-flow__node        { border-radius: 14px !important; }
+.react-flow__edge-path   { stroke-width: 2; }
+.react-flow__edge.selected .react-flow__edge-path { stroke: #6366f1; }
 
 .react-flow__handle {
-  width: 10px !important;
-  height: 10px !important;
+  width: 12px !important;
+  height: 12px !important;
   border-width: 2px !important;
   transition: transform 150ms ease, box-shadow 150ms ease !important;
   cursor: crosshair !important;
@@ -39,7 +46,15 @@
   z-index: 10;
 }
 
-/* Selected node ring */
+/* Larger handles on touch devices */
+@media (pointer: coarse) {
+  .react-flow__handle {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+/* Selected node glow ring */
 .react-flow__node.selected .node-card {
   box-shadow: 0 0 0 2px #6366f1, 0 10px 25px -5px rgba(99,102,241,0.25) !important;
 }
@@ -63,11 +78,22 @@
   border-bottom: 1px solid #e2e8f0 !important;
   color: #64748b !important;
   transition: background 150ms, color 150ms !important;
+  /* Bigger tap target on mobile */
+  min-height: 32px !important;
 }
-.dark .react-flow__controls-button { border-bottom-color: rgba(255,255,255,0.08) !important; color: #94a3b8 !important; }
+.dark .react-flow__controls-button {
+  border-bottom-color: rgba(255,255,255,0.08) !important;
+  color: #94a3b8 !important;
+}
 .react-flow__controls-button:last-child { border-bottom: none !important; }
-.react-flow__controls-button:hover { background: #f8fafc !important; color: #0f172a !important; }
-.dark .react-flow__controls-button:hover { background: rgba(255,255,255,0.06) !important; color: #f1f5f9 !important; }
+.react-flow__controls-button:hover {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+.dark .react-flow__controls-button:hover {
+  background: rgba(255,255,255,0.06) !important;
+  color: #f1f5f9 !important;
+}
 .react-flow__controls-button svg { fill: currentColor !important; }
 
 /* MiniMap */
@@ -82,15 +108,32 @@
   background: rgba(30,41,59,0.9) !important;
   border-color: rgba(255,255,255,0.08) !important;
 }
+/* Smaller minimap on tablet */
+@media (max-width: 1023px) {
+  .react-flow__minimap { display: none !important; }
+}
 
-/* Connection line animation */
+/* Animated connection line */
 .react-flow__connection-line {
   stroke: #6366f1;
   stroke-width: 2;
   stroke-dasharray: 5 5;
   animation: dashFlow 0.4s linear infinite;
 }
+
+/* Panel background (used by Controls) */
+.react-flow__panel { background: transparent !important; }
+
 @keyframes dashFlow {
   from { stroke-dashoffset: 10; }
   to   { stroke-dashoffset: 0; }
+}
+
+/* ── Utility classes ──────────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-spinner { animation: spin 0.8s linear infinite; }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
 }
